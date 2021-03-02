@@ -69,4 +69,12 @@ shadowJar {
     archiveName = 'addressbook.jar'
 }
 
+task extrachecks(type: Exec) {
+    commandLine 'bash', './config/travis/run-checks.sh'
+}
+
+tasks.check {
+    dependsOn extrachecks
+}
+
 defaultTasks 'clean', 'test'
