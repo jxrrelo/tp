@@ -88,6 +88,6 @@ public class RemarkCommand extends Command {
         RemarkCommand e = (RemarkCommand) other;
         return index.equals(e.index)
                 && remark.equals(e.remark);
+        
     }
-
 }
