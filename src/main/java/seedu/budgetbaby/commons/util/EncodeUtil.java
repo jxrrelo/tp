@@ -5,7 +5,7 @@ import java.util.Base64;
 public class EncodeUtil {
 
     // Changing ENCODING_COUNT requires updating of test data
-    private static final int ENCODING_COUNT = 2;
+    private static final int ENCODING_COUNT = 0;
 
     public static String getEncodedString(String decodedString) {
         String encodedString = decodedString;
